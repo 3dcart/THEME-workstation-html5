@@ -1156,7 +1156,10 @@ ul#desktopMenu li {
 	margin: 0 5px;
 }
 ul#desktopMenu li:last-child {
+	display: inline-block;
 	border-right: none;
+	position: relative;
+	margin: 0 5px;
 }
 ul#desktopMenu li:hover {
 	background: #FFF;

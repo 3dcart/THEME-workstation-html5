@@ -71,12 +71,10 @@
 <div id="mainContainer">
   <header>
     <div class="wrapper">
-      <div id="logo">
-        <!--START: global_header-->
+      <div id="logo"><a href="/" title="[store_name]"><!--START: global_header-->
         <h1 class="store-name">[storename]</h1>
         <h3 class="store-slogan">[storeslogan]</h3>
-        <!--END: global_header-->
-      </div>
+        <!--END: global_header--></a></div>
         <!--START: FRAME_SEARCH-->        
           <div id="searchBox" class="hidden-mobile">
             <form method="get" name="searchForm" action="search.asp">
@@ -286,9 +284,10 @@
 
      </div>
      <div class="ftr-col col3">
-     <!--START: FRAME_MAILLIST-->
+<!--START: FRAME_MAILLIST-->
      <div id="mailistBox">
-       <form method="post" name="mailing" action="mailing_list.asp?action=add" onsubmit="return mailing_list();">         
+       <form method="post" name="mailing" action="mailing_list.asp?action=add"   onsubmit="return mailing_list();">
+         <input type="hidden" name="subscribe" value="1" checked="checked">
          <div class="mailist-box">
           <h4>[frame_mailinglist]</h4>
            <input type="text" name="email" value="" placeholder="Email Address" />
