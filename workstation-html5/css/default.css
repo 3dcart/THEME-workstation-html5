@@ -1156,10 +1156,7 @@ ul#desktopMenu li {
 	margin: 0 5px;
 }
 ul#desktopMenu li:last-child {
-	display: inline-block;
 	border-right: none;
-	position: relative;
-	margin: 0 5px;
 }
 ul#desktopMenu li:hover {
 	background: #FFF;
@@ -1646,6 +1643,7 @@ footer .col3 {
 .cbp-spmenu-left.cbp-spmenu-open {
 	left: 0;
     z-index: 1050;
+	overflow:scroll;
 }
 .cbp-spmenu-right.cbp-spmenu-open {
 	right: 0;
@@ -1713,9 +1711,11 @@ body {
     #leftBar {display: none; visibility: hidden;}
     #mainContainer {width: auto; margin: auto;}
     .greeting {display: none; visibility:  hidden;}
-    .linkrow {display: none; visibility: hidden;}
+    /*.linkrow {display: none; visibility: hidden;}*/
 }
 
 @media screen and (max-width: 767px) {
     .top-menu {background: #ba1b21; padding: 0!important;}
+	#modLinks li{display:block; width:100%;}
+	.linkrow{ height:auto; padding-bottom:20px;}
 }
